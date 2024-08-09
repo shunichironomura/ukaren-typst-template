@@ -57,16 +57,16 @@
   // Author information (Japanese).
   align(center)[
     #set text(size: 10.5pt)
-    #authors.enumerate().map(i_author => [
-      #let (i, author) = i_author
-      #if author.presenting [〇]
-      #author.name-ja
-      #if (
+    #authors.enumerate().map(i_author => {
+      let (i, author) = i_author
+      if author.presenting [〇]
+      author.name-ja
+      if (
         i < authors.len() - 1 and author.affiliation-ja != authors.at(i + 1).affiliation-ja
       ) or i == authors.len() - 1 [
         （#author.affiliation-ja）
       ]
-    ]).join("，")
+    }).join("，")
   ]
 
   v(10.5pt)
@@ -77,15 +77,15 @@
   // Author information (English).
   align(center)[
     #set text(size: 10.5pt)
-    #authors.enumerate().map(i_author => [
-      #let (i, author) = i_author
-      #author.name-en
-      #if (
+    #authors.enumerate().map(i_author => {
+      let (i, author) = i_author
+      author.name-en
+      if (
         i < authors.len() - 1 and author.affiliation-en != authors.at(i + 1).affiliation-en
       ) or i == authors.len() - 1 [
         (#author.affiliation-en)
       ]
-    ]).join(",", last: "and")
+    }).join(", ", last: " and ")
   ]
 
   v(9.5pt)
