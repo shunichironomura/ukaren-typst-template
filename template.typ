@@ -60,12 +60,12 @@
     #authors.enumerate().map(i_author => {
       let (i, author) = i_author
       if author.presenting [〇]
-      author.name-ja
+      box(author.name-ja)
       if (
         i < authors.len() - 1 and author.affiliation-ja != authors.at(i + 1).affiliation-ja
-      ) or i == authors.len() - 1 [
-        （#author.affiliation-ja）
-      ]
+      ) or i == authors.len() - 1 {
+        box([（#author.affiliation-ja）])
+      }
     }).join("，")
   ]
 
@@ -79,12 +79,12 @@
     #set text(size: 10.5pt)
     #authors.enumerate().map(i_author => {
       let (i, author) = i_author
-      author.name-en
+      box(author.name-en)
       if (
         i < authors.len() - 1 and author.affiliation-en != authors.at(i + 1).affiliation-en
-      ) or i == authors.len() - 1 [
-        (#author.affiliation-en)
-      ]
+      ) or i == authors.len() - 1 {
+        box([~(#author.affiliation-en)])
+      }
     }).join(", ", last: " and ")
   ]
 
