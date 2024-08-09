@@ -114,7 +114,7 @@
   if n-columns == 1 {
     body
   } else {
-    show: columns.with(n-columns, gutter: 3em)
+    show: columns.with(n-columns, gutter: 7mm)
     body
   }
 }
