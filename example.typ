@@ -5,14 +5,25 @@
   title-ja: "第68回宇宙科学技術連合講演会原稿見本",
   title-en: "Sample Format of Paper for the 68th Symposium on Space Science and Technology",
   authors: (
-    (name-ja: "航空一郎", name-en: "Ichiro Koku", affiliation-ja: "日本航空宇宙学会", affiliation-en: "JSASS", presenting: true),
-    (name-ja: "宇宙花子", name-en: "Hanako Uchu", affiliation-ja: "日本航空宇宙学会", affiliation-en: "JSASS", presenting: false),
+    (
+      name-ja: "航空一郎",
+      name-en: "Ichiro Koku",
+      affiliation-ja: "日本航空宇宙学会",
+      affiliation-en: "JSASS",
+      presenting: true,
+    ),
+    (
+      name-ja: "宇宙花子",
+      name-en: "Hanako Uchu",
+      affiliation-ja: "日本航空宇宙学会",
+      affiliation-en: "JSASS",
+      presenting: false,
+    ),
   ),
-  // Insert your abstract after the colon, wrapped in brackets.
   abstract: [
     This paper instructs how to prepare your manuscript for the 68th Symposium on Space Sciences and Technology. All the final manuscripts should be written by word processors with the format specified in this manual. You are kindly requested to submit your manuscript in an electronic file on the JSASS website by #text(fill: red)[#underline([*13, September 2024*])].
   ],
-   keywords: (
+  keywords: (
     "Space Science",
     "Space Technology",
     "Format Sample",
