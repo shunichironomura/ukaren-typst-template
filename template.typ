@@ -12,7 +12,7 @@
   // General settings
   set document(author: authors.map(a => a.name-ja), title: title-ja)
   // Prioritize YuMincho because MS Mincho does not support bold.
-  set text(font: ("Times New Roman", "Yu Mincho", "MS Mincho"), lang: "ja")
+  set text(font: ("Times New Roman", "Yu Mincho", "YuMincho", "MS Mincho"), lang: "ja")
   set page(paper: "a4", margin: (x: 23mm, y: 25mm))
 
   // Heading settings
