@@ -109,5 +109,5 @@
 #bibliography(
   "bibliography.bib",
   title: [参考文献],
-  style: "sist02",
+  style: "bibstyle.csl",
 )
