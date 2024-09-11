@@ -48,6 +48,7 @@
   // Figure settings
   show figure.where(kind: table): set figure.caption(position: top)
   set table(stroke: .5pt)
+  set figure.caption(separator: [　])
 
   // Title (Japanese).
   align(center)[#text(size: 16pt)[#id\u{3000}#title-ja]]
