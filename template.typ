@@ -39,6 +39,31 @@
     v(-0.8 * measure(2 * a).width)
   }
 
+  // Section reference settings
+  show ref: it => {
+    let el = it.element
+    if el != none and el.func() == heading {
+      context {
+        let heading_counts = counter(heading).at(it.element.location())
+        if el.depth == 1 {
+          // 章
+          [第#heading_counts.at(0)章]
+          // counts
+        } else if el.depth == 2 {
+          // 節
+          [第#heading_counts.at(0).#heading_counts.at(1)節]
+        } else if el.depth == 3 {
+          // 項
+          [第#heading_counts.at(0).#heading_counts.at(1).#heading_counts.at(2)項]
+        } else {
+          it
+        }
+      }
+    } else {
+      it
+    }
+  }
+
   // Paragraph settings
   show par: set block(spacing: 0.65em)
 
