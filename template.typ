@@ -1,3 +1,10 @@
+#let phantom-paragraph() = {
+  set text(size: 11pt)
+  let a = par(box())
+  a
+  context v(-0.8 * measure(2 * a).width)
+}
+
 #let project(
   id: "",
   title-ja: "",
@@ -34,9 +41,7 @@
       }
       it
     }
-    let a = par(box())
-    a
-    v(-0.8 * measure(2 * a).width)
+    phantom-paragraph()
   }
 
   // Section reference settings
