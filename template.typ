@@ -125,7 +125,10 @@
   align(center)[
     #text(size: 9.5pt)[Abstract]
   ]
-  text(size: 9.5pt)[#h(2em)#abstract]
+  {
+    set par(justify: true)
+    text(size: 9.5pt)[#h(2em)#abstract]
+  }
 
   v(1.2em)
 
